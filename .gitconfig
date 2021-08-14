@@ -1,0 +1,53 @@
+[user]
+	email = nyanpasu64@tuta.io
+	name = nyanpasu64
+[core]
+	autocrlf = input
+	editor = kwrite
+	sshCommand = ssh -i ~/.ssh/id_ed25519
+
+[includeIf "gitdir:~/ternary/"]
+	path = ~/.gitconfig-ternary
+
+[merge]
+	tool = kdiff3
+[rebase]
+	autosquash = true
+[rerere]
+	enabled = true
+	autoupdate = true
+[cola]
+	spellcheck = false
+	fontdiff = IBM Plex Mono,11,-1,5,50,0,0,0,0,0
+	startupmode = folder
+	tabwidth = 4
+	boldheaders = false
+[pull]
+	ff = only
+[advice]
+	detachedHead = false
+[alias]
+	co = checkout
+	rs = restore -WSs
+	cp = cherry-pick
+	mt = mergetool
+	rb = rebase
+[gui]
+	editor = kwrite
+	historybrowser = git dag --all
+[mergetool]
+	keepBackup = false
+[diff]
+	tool = kdiff3
+[mailmap]
+	file = /home/nyanpasu64/.git/mailmap
+[absorb]
+	maxStack = 100
+[log]
+	mailmap = true
+[init]
+	defaultBranch = master
+[url "https://invent.kde.org/"]
+	insteadOf = kde:
+[url "ssh://git@invent.kde.org/"]
+	pushInsteadOf = kde:

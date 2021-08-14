@@ -1,0 +1,5 @@
+[user]
+	email = 9060548-ternarykitten@users.noreply.gitlab.com
+	name = ternarykitten
+[core]
+	sshCommand = ssh -i ~/.ssh/id_ternarykitten
