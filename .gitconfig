@@ -18,7 +18,7 @@
 	autoupdate = true
 [cola]
 	spellcheck = false
-	fontdiff = IBM Plex Mono,11,-1,5,50,0,0,0,0,0
+	fontdiff = IBM Plex Mono,9,-1,5,50,0,0,0,0,0
 	startupmode = folder
 	tabwidth = 4
 	boldheaders = false
