@@ -32,6 +32,7 @@
 	cp = cherry-pick
 	mt = mergetool
 	rb = rebase
+	b = branch
 [gui]
 	editor = kwrite
 	historybrowser = git dag --all
@@ -51,3 +52,5 @@
 	insteadOf = kde:
 [url "ssh://git@invent.kde.org/"]
 	pushInsteadOf = kde:
+[fetch]
+	prune = true
