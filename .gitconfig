@@ -5,6 +5,7 @@
 	autocrlf = input
 	editor = kwrite
 	sshCommand = ssh -i ~/.ssh/id_ed25519
+	excludesfile = ~/.gitignore_global
 
 [includeIf "gitdir:~/ternary/"]
 	path = ~/.gitconfig-ternary
@@ -41,7 +42,7 @@
 [diff]
 	tool = kdiff3
 [mailmap]
-	file = /home/nyanpasu64/.git/mailmap
+	file = ~/.git/mailmap
 [absorb]
 	maxStack = 100
 [log]
