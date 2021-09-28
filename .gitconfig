@@ -29,11 +29,13 @@
 	detachedHead = false
 [alias]
 	co = checkout
+	fa = fetch --all
+	b = branch
 	rs = restore -WSs
 	cp = cherry-pick
 	mt = mergetool
 	rb = rebase
-	b = branch
+	pushu = push -u origin HEAD
 [gui]
 	editor = kwrite
 	historybrowser = git dag --all
