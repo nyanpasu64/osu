@@ -5,6 +5,7 @@ SETUVAR --export EDITOR:nano
 SETUVAR --export GTK_USE_PORTAL:1
 SETUVAR --export KWIN_DRM_USE_EGL_STREAMS:1
 SETUVAR --export MOZ_USE_XINPUT2:1
+SETUVAR --export RUST_BACKTRACE:1
 SETUVAR --export VISUAL:kwrite
 SETUVAR --export XDG_DATA_DIRS:/home/nyanpasu64/\x2elocal/share/flatpak/exports/share\x3a/var/lib/flatpak/exports/share\x3a/usr/local/share\x3a/usr/share
 SETUVAR __fish_initialized:3100
