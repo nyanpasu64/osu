@@ -1,3 +1,5 @@
-function yadm-add --wraps='yadm add -u; yadm add ~/.config/fish' --description 'alias yadm-add=yadm add -u; yadm add ~/.config/fish'
-  yadm add -u; yadm add ~/.config/fish $argv; 
+function yadm-add --description 'Update files and folders added to yadm.'
+  yadm add -u
+  yadm add ~/.config/fish
+  yadm add ~/path
 end
