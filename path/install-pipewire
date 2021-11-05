@@ -1,0 +1,13 @@
+#!/usr/bin/fish
+sudo pacman -R \
+	pulseaudio-equalizer \
+	pulseaudio-jack \
+	pulseaudio-rtp \
+	pulseaudio-zeroconf
+	# pulseaudio-bluetooth
+
+yes | sudo pacman -S --needed pipewire-alsa pipewire-pulse pipewire-jack
+
+systemctl --user disable --now pulseaudio pulseaudio.socket
+systemctl --user enable --now pipewire pipewire.socket
+systemctl --user enable --now pipewire-pulse pipewire-pulse.socket
