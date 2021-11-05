@@ -37,6 +37,7 @@
 	mt = mergetool
 	rb = rebase
 	pushu = push -u origin HEAD
+	move = branchless move
 [gui]
 	editor = kwrite
 	historybrowser = git dag --all
