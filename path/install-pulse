@@ -4,7 +4,8 @@ yes | sudo pacman -S --needed \
 	pulseaudio-jack \
 	pulseaudio-rtp \
 	pulseaudio-zeroconf \
-	pulseaudio-bluetooth
+	pulseaudio-bluetooth \
+	pulseaudio-alsa
 sudo pacman -R pipewire-alsa pipewire-pulse pipewire-jack
 
 systemctl --user disable --now pipewire-pulse pipewire-pulse.socket
