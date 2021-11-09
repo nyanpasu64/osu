@@ -8,5 +8,5 @@ yes | sudo pacman -S --needed \
 	pulseaudio-alsa
 sudo pacman -R pipewire-alsa pipewire-pulse pipewire-jack
 
-systemctl --user disable --now pipewire-pulse pipewire-pulse.socket
+systemctl --user disable --now pipewire-pulse pipewire-pulse.socket wireplumber
 systemctl --user enable --now pulseaudio pulseaudio.socket
