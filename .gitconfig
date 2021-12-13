@@ -28,6 +28,7 @@
 	ff = only
 [advice]
 	detachedHead = false
+	skippedCherryPicks = false
 [alias]
 	co = checkout
 	fa = fetch --all
