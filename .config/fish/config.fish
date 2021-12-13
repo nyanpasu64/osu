@@ -1,5 +1,3 @@
-alias makepkg="nice -n 19 makepkg"
-alias paru="nice -n 19 paru --upgrademenu"
 alias xo=xdg-open
 alias ta="tig --branches --tags --remotes HEAD"
 alias taa="tig --all"
