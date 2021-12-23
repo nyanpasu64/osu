@@ -1,6 +1,7 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
 SETUVAR --export BROWSER:firefox
+SETUVAR --export DOTNET_CLI_TELEMETRY_OPTOUT:1
 SETUVAR --export EDITOR:nano
 SETUVAR --export KWIN_DRM_USE_EGL_STREAMS:1
 SETUVAR --export MOZ_USE_XINPUT2:1
