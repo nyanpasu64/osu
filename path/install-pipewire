@@ -7,7 +7,12 @@ sudo pacman -R \
 	pulseaudio-alsa
 	# pulseaudio-bluetooth
 
-yes | paru -S --needed pipewire-git pipewire-alsa-git pipewire-pulse-git wireplumber-git --assume-installed hotdoc
+cd ~/paru/pipewire-local
+makepkg -fsi
+
+# cd ~/paru/wireplumber-local
+# makepkg -fsi
+sudo pacman -S wireplumber
 
 systemctl --user disable --now pulseaudio pulseaudio.socket
 systemctl --user enable --now pipewire pipewire.socket
