@@ -62,3 +62,5 @@
 	prune = true
 [sequence]
 	editor = /home/nyanpasu64/.restack/edit.sh
+[submodule]
+	recurse = true
