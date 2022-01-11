@@ -1,2 +1,2 @@
 #!/bin/bash
-systemctl restart --user pulseaudio
+systemctl --user daemon-reload && systemctl restart --user pulseaudio
