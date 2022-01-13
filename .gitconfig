@@ -64,3 +64,5 @@
 	editor = /home/nyanpasu64/.restack/edit.sh
 [submodule]
 	recurse = true
+[commit]
+	verbose = true
