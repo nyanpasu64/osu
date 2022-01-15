@@ -15,5 +15,5 @@ makepkg -fsi
 sudo pacman -S wireplumber
 
 systemctl --user disable --now pulseaudio pulseaudio.socket
-systemctl --user enable --now pipewire pipewire.socket
-systemctl --user enable --now pipewire-pulse pipewire-pulse.socket wireplumber
+systemctl --user enable --now pipewire.socket
+systemctl --user enable --now pipewire-pulse.socket wireplumber
