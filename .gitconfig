@@ -46,6 +46,7 @@
 	keepBackup = false
 [diff]
 	tool = kdiff3
+	submodule = diff
 [mailmap]
 	file = ~/.git/mailmap
 [absorb]
