@@ -1,0 +1,2 @@
+#!/bin/bash
+exec git -c sequence.editor="$HOME/.restack/edit.sh" rebase -i "$@"
