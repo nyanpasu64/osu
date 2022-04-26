@@ -57,3 +57,6 @@ define nostop
 	handle SIG36 nostop
 	handle SIG37 nostop
 end
+
+#source .gdbinit-gef
+source /home/nyanpasu64/.gdbinit-gef.py
