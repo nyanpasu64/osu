@@ -13,6 +13,7 @@
 [merge]
 	tool = kdiff3
 	ff = false
+	conflictstyle = diff3
 [rebase]
 	autosquash = true
 [rerere]
@@ -65,3 +66,6 @@
 	recurse = true
 [commit]
 	verbose = true
+[diff "sqlite3"]
+    binary = true
+    textconv = "echo .dump | sqlite3"
