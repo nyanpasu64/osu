@@ -1,3 +1,5 @@
+# Identity
+
 [user]
 	email = nyanpasu64@tuta.io
 	name = nyanpasu64
@@ -6,30 +8,50 @@
 	editor = kwrite
 	sshCommand = ssh -i ~/.ssh/id_ed25519
 	excludesfile = ~/.gitignore_global
-
 [includeIf "gitdir:~/ternary/"]
 	path = ~/.gitconfig-ternary
 
-[merge]
-	tool = kdiff3
-	ff = false
-	conflictstyle = diff3
+# Config
+[advice]
+	detachedHead = false
+	skippedCherryPicks = false
+[log]
+	mailmap = true
+[mailmap]
+	file = ~/.git/mailmap
+[init]
+	defaultBranch = master
+[submodule]
+	recurse = true
+[commit]
+	verbose = true
+
+[fetch]
+	prune = true
+[pull]
+	ff = only
 [rebase]
 	autosquash = true
 [rerere]
 	enabled = true
 	autoupdate = true
-[cola]
-	spellcheck = false
-	fontdiff = IBM Plex Mono,9,-1,5,50,0,0,0,0,0
-	startupmode = folder
-	tabwidth = 4
-	boldheaders = false
-[pull]
-	ff = only
-[advice]
-	detachedHead = false
-	skippedCherryPicks = false
+
+# Mergetools
+[diff]
+	tool = kdiff3
+	submodule = diff
+[merge]
+	tool = kdiff3
+	ff = false
+	conflictstyle = diff3
+[mergetool]
+	keepBackup = false
+
+[diff "sqlite3"]
+    binary = true
+    textconv = "echo .dump | sqlite3"
+
+# Aliases
 [alias]
 	co = checkout
 	fa = fetch --all
@@ -40,32 +62,22 @@
 	rb = rebase
 	pushu = push -u origin HEAD
 	move = branchless move
+
+# External tools
+[cola]
+	spellcheck = false
+	fontdiff = IBM Plex Mono,9,-1,5,50,0,0,0,0,0
+	startupmode = folder
+	tabwidth = 4
+	boldheaders = false
 [gui]
 	editor = kwrite
 	historybrowser = git dag --all
-[mergetool]
-	keepBackup = false
-[diff]
-	tool = kdiff3
-	submodule = diff
-[mailmap]
-	file = ~/.git/mailmap
 [absorb]
 	maxStack = 100
-[log]
-	mailmap = true
-[init]
-	defaultBranch = master
+
+# ???
 [url "https://invent.kde.org/"]
 	insteadOf = kde:
 [url "ssh://git@invent.kde.org/"]
 	pushInsteadOf = kde:
-[fetch]
-	prune = true
-[submodule]
-	recurse = true
-[commit]
-	verbose = true
-[diff "sqlite3"]
-    binary = true
-    textconv = "echo .dump | sqlite3"
