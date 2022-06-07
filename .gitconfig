@@ -6,7 +6,7 @@
 [core]
 	autocrlf = input
 	editor = kwrite
-	sshCommand = ssh -i ~/.ssh/id_ed25519
+	sshCommand = ssh -i ~/.ssh/id_ed25519_sk
 	excludesfile = ~/.gitignore_global
 [includeIf "gitdir:~/ternary/"]
 	path = ~/.gitconfig-ternary
