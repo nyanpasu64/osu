@@ -8,6 +8,8 @@ dir /home/nyanpasu64/pkgbuild/qt5-base/trunk/src/qtbase/src/plugins/platforms/xc
 #dir /home/nyanpasu64/pkgbuild/pulseaudio/trunk/src/pulseaudio/src/pulsecore/
 #dir /home/nyanpasu64/pkgbuild/libksysguard/trunk/src/libksysguard-5.22.4
 dir /home/nyanpasu64/kde/src/frameworks/kxmlgui/src
+dir /home/nyanpasu64/code/alsa-lib/src/pcm/
+dir /home/nyanpasu64/code/pipewire/pipewire-alsa/alsa-plugins/
 
 python
 import sys
