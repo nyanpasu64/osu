@@ -33,6 +33,9 @@ source /home/nyanpasu64/code/kdevelop/plugins/gdb/printers/gdbinit
 #   printf "\"\n"
 # end
 
+set width unlimited
+set pagination off
+
 define log
 	b $arg0
 	commands
