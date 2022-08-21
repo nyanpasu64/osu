@@ -6,3 +6,5 @@ alias tb="tig --branches HEAD"
 # preserve coloring, feed into pager
 alias rgc="rg -p"
 alias lc="less -r"
+
+thefuck --alias | source
