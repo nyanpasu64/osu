@@ -7,7 +7,7 @@ SETUVAR --export KWIN_DRM_USE_EGL_STREAMS:1
 SETUVAR --export MOZ_USE_XINPUT2:1
 SETUVAR --export RUST_BACKTRACE:1
 SETUVAR --export VISUAL:kwrite
-SETUVAR --export XDG_DATA_DIRS:/home/nyanpasu64/\x2elocal/share/flatpak/exports/share\x3a/var/lib/flatpak/exports/share\x3a/usr/local/share\x3a/usr/share
+SETUVAR --export --path XDG_DATA_DIRS:/home/nyanpasu64/\x2elocal/share/flatpak/exports/share\x1e/var/lib/flatpak/exports/share\x1e/usr/local/share\x1e/usr/share
 SETUVAR __fish_initialized:3400
 SETUVAR fish_color_autosuggestion:969896
 SETUVAR fish_color_cancel:\x2dr

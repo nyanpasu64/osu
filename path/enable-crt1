@@ -1,0 +1,9 @@
+# nesdev server
+xrandr --newmode "1440x480i-60" 27 1440 1478 1602 1716 480 489 495 525 interlace
+# crt emudriver
+xrandr --newmode "1440x240p-60" 27.26 1440 1480 1608 1736 240 244 247 262 -hsync -vsync
+xrandr --addmode HDMI-2 "1440x480i-60"
+xrandr --addmode HDMI-2 "1440x240p-60"
+
+#xrandr --output HDMI-2 --mode "1440x480i-60" --scale-from 1280x960 --pos 3640x0 --primary
+xrandr --output HDMI-2 --mode "1440x480i-60" --scale-from 1280x960 --pos 2560x0 --primary

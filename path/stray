@@ -1,0 +1,64 @@
+#!/bin/bash
+systemctl --user stop plasma-plasmashell
+
+function stray_crt() {
+	# nesdev server
+	xrandr --newmode "1440x480i-60" 27 1440 1478 1602 1716 480 489 495 525 interlace
+	# crt emudriver
+	xrandr --newmode "1440x480i-60e" 27.31 1440 1480 1608 1736 480 487 493 525 interlace -hsync -vsync
+	xrandr --newmode "1440x240p-60e" 27.26 1440 1480 1608 1736 240 244 247 262 -hsync -vsync
+	xrandr --addmode HDMI-2 "1440x480i-60e"
+	xrandr --addmode HDMI-2 "1440x240p-60e"
+
+	# Change this to dial in underscan.
+	#
+	# - increasing fb.dx makes the game render black sidebars, and squashes the image horizontally (if the image is too wide).
+	# - increasing fb.dy makes the game render black topbars, and squashes the image vertically (if the image is too tall).
+	# - increasing hblank non-image time makes the dc render black sidebars, and squashes the image horizontally (if the image is too wide).
+	#
+	# borders = (kwin.x, fb.dx - game.dx - kwin.x) x (kwin.y, fb.dy - game.dy - kwin.y)
+	#
+	# kwin = (borders.x0, borders.y0)
+	# fb = (game.dx + borders.x0 + borders.x1, game.dy + borders.y0 + borders.y1)
+
+	# xrandr --output HDMI-2 --mode "1440x480i-60e" --scale-from 1440x1050 --pos 0x0 --primary
+	# fb = (1440 x 1050), game = (1280 x 960)
+	# kwin = (80 x 60)
+	# borders = (80+80) x (60+30) overscan
+	# overscan = (+, -) x (++, -)
+
+	# fb = (1440 x 1030) game = (1280 x 960)
+	# kwin = (70 x 30)
+	# borders = (70+90) x (30+40) overscan
+	# overscan = ???
+	xrandr --output HDMI-2 --mode "1440x480i-60e" --scale-from 1440x1030 --pos 0x0 --primary
+}
+
+autorandr --save stray-orig
+
+stray_crt
+xrandr --output DP-1 --off
+xrandr --output DVI-D-1 --off
+stray_crt
+
+# ~~disables compositing~~ doesn't??? oh well
+# = %1
+mpv --fs "$HOME/Documents (Shared)/component/2560 black.png" &
+
+# wait for mpv to show first (unneeded, stray is slow to start)
+# sleep 1
+
+systemd-inhibit flatpak run --command=bottles-cli com.usebottles.bottles run -p Stray -b 'Stray'
+
+# $! introduces a pid reuse race condition, %1 doesn't.
+kill %1
+# Should I `pkill -P $$`?
+
+# sleep 1
+
+# Need to call twice to avoid squashed image on DP screen
+autorandr --load stray-orig
+autorandr --load stray-orig
+# xrandr --output HDMI-2 --off
+
+systemctl --user start plasma-plasmashell
