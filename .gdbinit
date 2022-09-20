@@ -64,5 +64,6 @@ define nostop
 end
 
 set debuginfod enabled on
-#source .gdbinit-gef
-source /home/nyanpasu64/.gdbinit-gef.py
+define gef
+	source /home/nyanpasu64/.gdbinit-gef.py
+end
