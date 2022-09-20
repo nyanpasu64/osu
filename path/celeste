@@ -1,0 +1,29 @@
+#!/bin/bash
+function celeste_crt() {
+	# nesdev server
+	xrandr --newmode "1440x480i-60" 27 1440 1478 1602 1716 480 489 495 525 interlace
+	# crt emudriver
+	xrandr --newmode "1440x480i-60e" 27.31 1440 1480 1608 1736 480 487 493 525 interlace -hsync -vsync
+	xrandr --newmode "1440x240p-60e" 27.26 1440 1480 1608 1736 240 244 247 262 -hsync -vsync
+	xrandr --addmode HDMI-2 "1440x480i-60e"
+	xrandr --addmode HDMI-2 "1440x240p-60e"
+
+	xrandr --output HDMI-2 \
+        --mode "1440x240p-60e" --scale-from 1280x960 --pos 0x0 --primary \
+        `#wrong` \
+        --set "underscan hborder" 32 --set underscan on
+}
+
+autorandr --save stray-orig
+
+celeste_crt
+xrandr --output DP-1 --off
+xrandr --output DVI-D-1 --off
+celeste_crt
+
+systemd-inhibit /home/nyanpasu64/apps/celeste-linux/Celeste.bin.x86_64
+
+# Need to call twice to avoid squashed image on DP screen
+autorandr --load stray-orig
+autorandr --load stray-orig
+# xrandr --output HDMI-2 --off
