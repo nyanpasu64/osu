@@ -11,11 +11,11 @@ dir /home/nyanpasu64/kde/src/frameworks/kxmlgui/src
 dir /home/nyanpasu64/code/alsa-lib/src/pcm/
 dir /home/nyanpasu64/code/pipewire/pipewire-alsa/alsa-plugins/
 
-python
-import sys
-sys.path.insert(0, "/home/nyanpasu64/code/kdevelop/plugins/gdb/printers")
-end
-source /home/nyanpasu64/code/kdevelop/plugins/gdb/printers/gdbinit
+#python
+#import sys
+#sys.path.insert(0, "/home/nyanpasu64/code/kdevelop/plugins/gdb/printers")
+#end
+#source /home/nyanpasu64/code/kdevelop/plugins/gdb/printers/gdbinit
 
 # define qstr
 #   set $d=$arg0.d
