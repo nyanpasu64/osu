@@ -83,3 +83,4 @@
 	pushInsteadOf = kde:
 [safe]
 	directory = /boot/loader
+	directory = /mnt/shared/opencore/OpenCore-0.8.2-DEBUG
