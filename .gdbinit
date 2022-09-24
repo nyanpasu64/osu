@@ -67,3 +67,14 @@ set debuginfod enabled on
 define gef
 	source /home/nyanpasu64/.gdbinit-gef.py
 end
+
+# Enable multiprocess debugging.
+# See `Documents (Shared)/notes/gdb multiprocess.md`
+define follow
+	set detach-on-fork off
+	#set non-stop on
+	set print inferior-events on
+	set schedule-multiple on
+	#set mi-async on
+end
+# info threads
