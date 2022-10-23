@@ -84,3 +84,6 @@
 [safe]
 	directory = /boot/loader
 	directory = /mnt/shared/opencore/OpenCore-0.8.2-DEBUG
+	directory = /mnt/storage/vm
+[push]
+	autoSetupRemote = true
