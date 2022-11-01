@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+zlib-flate -uncompress < $1 | hexdump -v -C

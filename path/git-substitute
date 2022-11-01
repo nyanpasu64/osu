@@ -1,0 +1,20 @@
+#!/bin/bash
+DIR="$(dirname "$0")"
+
+OLD="$1"
+NEW="$2"
+shift 2
+
+function REPLACE_NEW {
+	echo "return $1.replace(b'$OLD', b'$NEW')"
+}
+
+echo "$OLD==>$NEW" > "$DIR/REWRITE_REPLACE"
+
+# See https://www.mankier.com/1/git-filter-repo for help.
+git filter-repo \
+	--partial \
+	--replace-text "$DIR/REWRITE_REPLACE" \
+	--message-callback "$(REPLACE_NEW message)" \
+	$*
+#EOL

@@ -87,3 +87,7 @@
 	directory = /mnt/storage/vm
 [push]
 	autoSetupRemote = true
+[diff "bin"]
+    textconv = hexdump -v -C
+[diff "bin"]
+    textconv = furnace-diff
