@@ -88,6 +88,7 @@
 	directory = /mnt/shared/ROMS/SNES-GAMES
 [push]
 	autoSetupRemote = true
+	default = upstream
 [diff "bin"]
     textconv = hexdump -v -C
 [diff "bin"]
