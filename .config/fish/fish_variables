@@ -4,6 +4,7 @@ SETUVAR --export BROWSER:firefox
 SETUVAR --export DOTNET_CLI_TELEMETRY_OPTOUT:1
 SETUVAR --export EDITOR:nano
 SETUVAR --export KWIN_DRM_USE_EGL_STREAMS:1
+SETUVAR --export --path PICO_SDK_PATH:/home/nyanpasu64/pico/pico\x2dsdk/
 SETUVAR --export RUST_BACKTRACE:1
 SETUVAR --export VISUAL:kwrite
 SETUVAR --export --path XDG_DATA_DIRS:/home/nyanpasu64/\x2elocal/share/flatpak/exports/share\x1e/var/lib/flatpak/exports/share\x1e/usr/local/share\x1e/usr/share
