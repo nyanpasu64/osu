@@ -1,10 +1,11 @@
 kscreen-doctor \
 output.DP-1.disable \
 output.HDMI-1.disable \
-\
 output.DP-2.enable \
-output.DP-2.primary \
+
+kscreen-doctor \
 output.DP-2.mode.1280x1024@75 \
 
 kscreen-doctor \
+output.DP-2.primary \
 output.DP-2.position.0,0
