@@ -1,8 +1,10 @@
 add-auto-load-safe-path /usr/bin/mono-sgen-gdb.py
 
-dir /home/nyanpasu64/pkgbuild/qt5-base/trunk/src/qtbase/src/corelib/
-dir /home/nyanpasu64/pkgbuild/qt5-base/trunk/src/qtbase/src/widgets/
-dir /home/nyanpasu64/pkgbuild/qt5-base/trunk/src/qtbase/src/plugins/platforms/xcb
+# arch switched to `pkgctl repo clone`
+#dir /home/nyanpasu64/pkgbuild/qt5-base/trunk/src/qtbase/src/corelib/
+#dir /home/nyanpasu64/pkgbuild/qt5-base/trunk/src/qtbase/src/widgets/
+#dir /home/nyanpasu64/pkgbuild/qt5-base/trunk/src/qtbase/src/plugins/platforms/xcb
+
 #dir /home/nyanpasu64/pkgbuild/kconfigwidgets/trunk/src/kconfigwidgets-5.82.0/src/
 #dir /home/nyanpasu64/pkgbuild/pulseaudio/trunk/src/pulseaudio/src/pulse/
 #dir /home/nyanpasu64/pkgbuild/pulseaudio/trunk/src/pulseaudio/src/pulsecore/

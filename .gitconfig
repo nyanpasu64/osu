@@ -20,7 +20,7 @@
 [mailmap]
 	file = ~/.git/mailmap
 [init]
-	defaultBranch = master
+	defaultBranch = dev
 [submodule]
 	recurse = true
 [commit]
@@ -70,6 +70,7 @@
 	startupmode = folder
 	tabwidth = 4
 	boldheaders = false
+	blockcursor = false
 [gui]
 	editor = kwrite
 	historybrowser = git dag --all
@@ -86,6 +87,7 @@
 	directory = /mnt/shared/opencore/OpenCore-0.8.2-DEBUG
 	directory = /mnt/storage/vm
 	directory = /mnt/shared/ROMS/SNES-GAMES
+	directory = /mnt/shared/Shared Documents/zola-site
 [push]
 	autoSetupRemote = true
 	default = upstream
