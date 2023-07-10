@@ -88,6 +88,9 @@
 	directory = /mnt/storage/vm
 	directory = /mnt/shared/ROMS/SNES-GAMES
 	directory = /mnt/shared/Shared Documents/zola-site
+	directory = /mnt/storage
+	directory = /mnt/storage/backup-web/drive-download-20230710T042318Z
+	directory = /run/media/nyanpasu64/737d32af-0bc6-4eca-998e-399ef8978cb5/@/tmp/drive-rewrite
 [push]
 	autoSetupRemote = true
 	default = upstream

@@ -1,0 +1,3 @@
+#!/bin/bash
+
+exec wine /home/nyanpasu64/apps/split700-2.0-win64/split700.exe "$@"
