@@ -12,7 +12,7 @@ output.$HDMI.disable \
 output.DP-2.enable;
 
 kscreen-doctor \
-output.DP-2.mode.1280x1024@75;
+output.DP-2.mode.1280x960@85;
 
 kscreen-doctor \
 output.DP-2.primary \

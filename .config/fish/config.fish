@@ -8,3 +8,5 @@ alias rgc="rg -p"
 alias lc="less -r"
 
 thefuck --alias | source
+
+git machete completion fish | source
