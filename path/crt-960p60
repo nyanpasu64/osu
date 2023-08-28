@@ -1,19 +1,3 @@
 #!/bin/bash
 
-# HDMI=HDMI-1
-# if [[ "$XDG_SESSION_TYPE" == "wayland" ]]; then
-# 	HDMI=HDMI-A-1
-# fi
-HDMI=DVI-D-1
-
-kscreen-doctor \
-output.DP-1.disable \
-output.$HDMI.disable \
-output.DP-2.enable;
-
-kscreen-doctor \
-output.DP-2.mode.1280x960@60;
-
-kscreen-doctor \
-output.DP-2.primary \
-output.DP-2.position.0,0;
+exec crt-generic 1280x960@60
