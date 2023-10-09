@@ -1,0 +1,3 @@
+#!/bin/bash
+
+exec crt-generic 1280x960@75

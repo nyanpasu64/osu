@@ -1,0 +1,11 @@
+#!/bin/bash
+
+if [ "$#" -ne 2 ]; then
+    echo "Usage: $0 <remote> <tag>"
+    exit 1
+fi
+
+remote="$1"
+tag="$2"
+
+git fetch "$remote" tag "$tag" --no-tags --depth 1
