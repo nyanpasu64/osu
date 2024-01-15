@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# HDMI=HDMI-1
+# if [[ "$XDG_SESSION_TYPE" == "wayland" ]]; then
+# 	HDMI=HDMI-A-1
+# fi
+HDMI=DVI-D-1
+
+kscreen-doctor \
+output.DP-1.enable \
+output.$HDMI.disable \
+output.DP-2.enable;
+
+kscreen-doctor \
+output.DP-1.mode.2560x1440@60 \
+output.DP-2.mode.640x480@60;
+
+kscreen-doctor \
+output.DP-1.primary \
+output.DP-1.position.0,0 \
+output.DP-2.position.-640,`expr 1440 - 480`;
