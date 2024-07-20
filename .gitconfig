@@ -48,8 +48,8 @@
 	keepBackup = false
 
 [diff "sqlite3"]
-    binary = true
-    textconv = "echo .dump | sqlite3"
+	binary = true
+	textconv = "echo .dump | sqlite3"
 
 # Aliases
 [alias]
@@ -95,8 +95,11 @@
 	autoSetupRemote = true
 	default = upstream
 [diff "hex"]
-    textconv = hexdump -v -C
+	textconv = hexdump -v -C
+	binary = true
+[diff "edid-decode"]
+	textconv = edid-decode
 	binary = true
 [diff "furnace"]
-    textconv = furnace-diff
+	textconv = furnace-diff
 	binary = true
