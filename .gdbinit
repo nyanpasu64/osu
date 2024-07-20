@@ -65,7 +65,7 @@ define nostop
 	handle SIG37 nostop
 end
 
-#set debuginfod enabled on
+set debuginfod enabled on
 define gef
 	source /home/nyanpasu64/.gdbinit-gef.py
 end
