@@ -5,6 +5,7 @@ SETUVAR --export DOTNET_CLI_TELEMETRY_OPTOUT:1
 SETUVAR --export EDITOR:nano
 SETUVAR --export KWIN_DRM_USE_EGL_STREAMS:1
 SETUVAR --export --path PICO_SDK_PATH:/home/nyanpasu64/pico/pico\x2dsdk/
+SETUVAR --export PYENV_ROOT:/home/nyanpasu64/\x2epyenv
 SETUVAR --export RUST_BACKTRACE:1
 SETUVAR --export VISUAL:kwrite
 SETUVAR --export --path XDG_DATA_DIRS:/home/nyanpasu64/\x2elocal/share/flatpak/exports/share\x1e/var/lib/flatpak/exports/share\x1e/usr/local/share\x1e/usr/share
@@ -39,4 +40,4 @@ SETUVAR fish_pager_color_prefix:white\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
 SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
 SETUVAR fish_pager_color_selected_background:\x2dr
 SETUVAR fish_prompt_pwd_dir_length:0
-SETUVAR fish_user_paths:/home/nyanpasu64/bin\x1e/home/nyanpasu64/XBPS/usr/bin\x1e/home/nyanpasu64/code/BRRtools/bin\x1e/home/nyanpasu64/go/bin\x1e/home/nyanpasu64/path\x1e/home/nyanpasu64/\x2elocal/share/gem/ruby/3\x2e0\x2e0/bin\x1e/home/nyanpasu64/\x2epub\x2dcache/bin\x1e/opt/flutter/bin\x1e/home/nyanpasu64/\x2ecargo/bin\x1e/home/nyanpasu64/\x2elocal/bin
+SETUVAR fish_user_paths:/home/nyanpasu64/\x2epyenv/bin\x1e/home/nyanpasu64/bin\x1e/home/nyanpasu64/XBPS/usr/bin\x1e/home/nyanpasu64/code/BRRtools/bin\x1e/home/nyanpasu64/go/bin\x1e/home/nyanpasu64/path\x1e/home/nyanpasu64/\x2elocal/share/gem/ruby/3\x2e0\x2e0/bin\x1e/home/nyanpasu64/\x2epub\x2dcache/bin\x1e/opt/flutter/bin\x1e/home/nyanpasu64/\x2ecargo/bin\x1e/home/nyanpasu64/\x2elocal/bin
