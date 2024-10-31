@@ -1,6 +1,9 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
 SETUVAR --export BROWSER:firefox
+SETUVAR --export CARGO_MOMMYS_FUCKING:slut/toy/pet/pervert/whore/kitty/kitten/hole
+SETUVAR --export CARGO_MOMMYS_MOODS:chill/thirsty/yikes
+SETUVAR --export CARGO_MOMMYS_PARTS:milk/cum/gock
 SETUVAR --export DOTNET_CLI_TELEMETRY_OPTOUT:1
 SETUVAR --export EDITOR:nano
 SETUVAR --export KWIN_DRM_USE_EGL_STREAMS:1
