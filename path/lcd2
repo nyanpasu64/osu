@@ -22,7 +22,7 @@ if [[ "$XDG_SESSION_TYPE" == "x11" ]]; then
 fi
 
 kscreen-doctor \
-output.DP-1.position.0,0 \
+output.DP-1.position.0,150 \
 output.DP-1.primary \
 output.$HDMI.position.2560,0 \
 output.$HDMI.rotation.left;

@@ -29,7 +29,7 @@ sub deswappify {
             print STDERR "Deswappifying $pid...\n";
           }
 
-          printf STDERR "%x - %x\n", $start_addr, $end_addr;
+          # printf STDERR "%x - %x\n", $start_addr, $end_addr;
 
           seek($fh, $start_addr, SEEK_SET);
           while ($start_addr < $end_addr) {
