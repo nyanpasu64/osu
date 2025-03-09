@@ -7,6 +7,7 @@ SETUVAR --export CARGO_MOMMYS_PARTS:milk/cum/gock
 SETUVAR --export DOTNET_CLI_TELEMETRY_OPTOUT:1
 SETUVAR --export EDITOR:nano
 SETUVAR --export KWIN_DRM_USE_EGL_STREAMS:1
+SETUVAR --export MOZ_ENABLE_WAYLAND:0
 SETUVAR --export --path PICO_SDK_PATH:/home/nyanpasu64/pico/pico\x2dsdk/
 SETUVAR --export PYENV_ROOT:/home/nyanpasu64/\x2epyenv
 SETUVAR --export RUST_BACKTRACE:1
