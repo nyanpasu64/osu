@@ -1,10 +1,11 @@
 #!/bin/bash
 
-# HDMI=HDMI-1
-# if [[ "$XDG_SESSION_TYPE" == "wayland" ]]; then
-# 	HDMI=HDMI-A-1
-# fi
-HDMI="HDMI-3"
+HDMI=HDMI-3
+DIV=1
+if [[ "$XDG_SESSION_TYPE" == "wayland" ]]; then
+	HDMI=HDMI-A-3
+	DIV=1.25
+fi
 
 kscreen-doctor \
 output.DP-1.enable \
@@ -15,14 +16,14 @@ kscreen-doctor \
 output.DP-2.disable;
 
 kscreen-doctor \
-output.DP-1.mode.2560x1440@60 \
+output.DP-1.mode.2560x1440@75 \
 output.$HDMI.mode.1920x1080@60;
 if [[ "$XDG_SESSION_TYPE" == "x11" ]]; then
 	xrandr --output $HDMI --mode "1920x1080" || true
 fi
 
 kscreen-doctor \
-output.DP-1.position.0,150 \
+output.DP-1.position.0,$(echo 112/$DIV|bc) \
 output.DP-1.primary \
-output.$HDMI.position.2560,0 \
+output.$HDMI.position.$(echo 2560/$DIV|bc),0 \
 output.$HDMI.rotation.left;

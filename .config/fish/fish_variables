@@ -11,6 +11,7 @@ SETUVAR --export MOZ_ENABLE_WAYLAND:0
 SETUVAR --export --path PICO_SDK_PATH:/home/nyanpasu64/pico/pico\x2dsdk/
 SETUVAR --export PYENV_ROOT:/home/nyanpasu64/\x2epyenv
 SETUVAR --export RUST_BACKTRACE:1
+SETUVAR --export SAMPLY_USE_DEBUGINFOD:1
 SETUVAR --export VISUAL:kwrite
 SETUVAR --export --path XDG_DATA_DIRS:/home/nyanpasu64/\x2elocal/share/flatpak/exports/share\x1e/var/lib/flatpak/exports/share\x1e/usr/local/share\x1e/usr/share
 SETUVAR __fish_initialized:3800

@@ -71,6 +71,7 @@
 	tabwidth = 4
 	boldheaders = false
 	blockcursor = false
+	hidpi = 0
 [gui]
 	editor = kwrite
 	historybrowser = git dag --all
