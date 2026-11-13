@@ -80,3 +80,5 @@ define follow
 	#set mi-async on
 end
 # info threads
+
+source ~/code/gdb-dashboard/.gdbinit
