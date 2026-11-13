@@ -6,7 +6,6 @@
 [core]
 	autocrlf = input
 	editor = kwrite
-	sshCommand = ssh -i ~/.ssh/id_ed25519_sk
 	excludesfile = ~/.gitignore_global
 [includeIf "gitdir:~/ternary/"]
 	path = ~/.gitconfig-ternary
@@ -40,6 +39,8 @@
 [diff]
 	tool = kdiff3
 	submodule = diff
+[url "https://gitlab.archlinux.org/"]
+  insteadOf = git@gitlab.archlinux.org:
 [merge]
 	tool = kdiff3
 	ff = false
@@ -54,6 +55,7 @@
 # Aliases
 [alias]
 	co = checkout
+	sw = switch
 	fa = fetch --all
 	b = branch
 	rs = restore -WSs
@@ -61,17 +63,18 @@
 	mt = mergetool
 	rb = rebase
 	pushu = push -u origin HEAD
+	pushf = push -u fork HEAD
+	pushs = push -u servlet HEAD
 	move = branchless move
 
 # External tools
 [cola]
 	spellcheck = false
-	fontdiff = IBM Plex Mono,9,-1,5,50,0,0,0,0,0
+	fontdiff = mononoki,9,-1,5,50,0,0,0,0,0
 	startupmode = folder
 	tabwidth = 4
 	boldheaders = false
 	blockcursor = false
-	hidpi = 0
 [gui]
 	editor = kwrite
 	historybrowser = git dag --all
